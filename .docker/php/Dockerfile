@@ -18,8 +18,6 @@ RUN docker-php-ext-install \
     pdo_mysql \
     ldap
 
-RUN pecl install mongodb && echo "extension=mongodb.so" > /usr/local/etc/php/conf.d/ext-mongo.ini
-
 RUN usermod -u 1000 www-data
 RUN groupmod -g 1000 www-data
 #Install composer
