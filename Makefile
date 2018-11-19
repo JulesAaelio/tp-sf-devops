@@ -1,14 +1,18 @@
 .PHONY:
 install-deps:
-    docker-compose run --rm php composer install
+	docker-compose run --rm php composer install
 
 .env:
-    cp .env.dist .env
+	cp .env.dist .env
 
 .PHONY:
 start:
-    docker-compose up -d
+	docker-compose up -d
 
 .PHONY:
 stop:
-    docker-compose stop
+	docker-compose stop
+
+.PHONY:
+test:
+	docker-compose exec php php bin/phpunit
