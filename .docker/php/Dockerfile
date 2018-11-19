@@ -6,17 +6,13 @@ RUN apt-get install -y \
     libpng-dev \
     git \
     apt-utils \
-    libldap2-dev \
     sudo \
     libssl-dev
-
-RUN docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/
 
 RUN docker-php-ext-install \
     gd \
     zip \
     pdo_mysql \
-    ldap
 
 RUN usermod -u 1000 www-data
 RUN groupmod -g 1000 www-data
