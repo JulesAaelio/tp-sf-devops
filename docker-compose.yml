@@ -4,8 +4,6 @@ services:
     image: mysql:5.7
     ports:
     - 3307:3306
-    volumes:
-    - ~/symfony-data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_USER: ${DB_USER}
