@@ -22,6 +22,9 @@ services:
       - php
     ports:
       - 8080:80
+    networks:
+      - default
+      - sf_logging
 
   php:
     build: .docker/php
@@ -34,3 +37,5 @@ services:
     volumes:
       - ./:/var/www/symfony
 
+networks:
+  sf_logging: {}
