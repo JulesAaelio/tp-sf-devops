@@ -12,7 +12,7 @@ RUN apt-get install -y \
 RUN docker-php-ext-install \
     gd \
     zip \
-    pdo_mysql \
+    pdo_mysql
 
 RUN usermod -u 1000 www-data
 RUN groupmod -g 1000 www-data
