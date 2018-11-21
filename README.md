@@ -1,5 +1,6 @@
 # tp-sf-devops 
 Jules LAURENT 
+Théo SCHMIDT
 
 
 [![Build Status](https://travis-ci.org/JulesAaelio/tp-sf-devops.svg?branch=master)](https://travis-ci.org/JulesAaelio/tp-sf-devops)
